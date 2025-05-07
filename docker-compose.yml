@@ -1,0 +1,8 @@
+services:
+  gaganode:
+    container_name: gaganode
+    image: ghcr.nju.edu.cn/aahl/gaga
+    # image: ghcr.io/aahl/gaga
+    environment:
+      GAGA_TOKEN: ${GAGA_TOKEN}
+    restart: unless-stopped
